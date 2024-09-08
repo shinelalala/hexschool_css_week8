@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week8 Learning | 講師介紹頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="banner">
+      <picture class="banner">
+        <source media="(min-width: 992px)" srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/hero-5.png?raw=true">
+        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/hero-sm-5.png?raw=true" class="w-100">
+      </picture>
+    </div>
+
+    <div class="teacher-info">
+      <div class="container position-relative">
+        <div class="mb-3 pt-10">
+          <div class="row">
+            <div class="col-lg-4 col-12 mb-3 border-0 me-7">
+              <div class="logo-img rounded-circle bg-white position-absolute top-0 start-50 translate-middle">
+                <img src="https://lh5.googleusercontent.com/-HxdAXDevCOM/AAAAAAAAAAI/AAAAAAAAAGE/kpIzybNcc9o/photo.jpg?sz=170" class="img-fluid" alt="logo" width="200px" height="200px">
+              </div>
+            </div>
+            <div class="col-lg-7 col-12">
+              <div class="card-body">
+                <h1 class="card-title">六角學院</h1>
+                <ul class="list-unstyled d-flex">
+                  <li class="me-5"><span class="text-primary fw-bold">4</span>堂課</li>
+                  <li class="me-5"><span class="text-neutral-60">|</span><span class="text-primary ms-5 fw-bold">8463</span>收藏數</li>
+                  <li><span class="text-neutral-60">|</span><span class="text-primary ms-5 fw-bold">20,218</span>個學生</li>
+                </ul>
+                <p class="card-text text-neutral-80">
+                  六角學院 是一所線上程式開發學習單位，目前已累積 20,000 名學員，讓更多人藉由線上學習在職涯規劃上有更多的選擇是我們的使命是，如果您贊同我們的理念，歡迎加入六角。
+                  我們將深入了解您想發展的領域，每位實習生我們都會量身打造專屬於您的舞台，並讓您實際瞭解公司營運 Know how。
+                </p>
+                <ul class="list-unstyled d-flex social">
+                  <li class="me-3"><a href="#" class="text-neutral-80"><i class="bi bi-line"></i></a></li>
+                  <li class="me-3"><a href="#" class="text-neutral-80"><i class="bi bi-youtube"></i></a></li>
+                  <li><a href="#" class="text-neutral-80"><i class="bi bi-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rel-class">
+      <div class="container">
+        <h5 class="fw-bold mb-5"><i class="bi bi-asterisk text-primary"></i>六角學院開的課</h5>
+        <div class="swiper class-swiper">
+          <!-- <div class="swiper-wrapper"> -->
+            <!-- <div class="swiper-slide"> -->
+              <div class="mb-11 swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true" class="card-img-top" alt="">
+                    <span class="discount bg-error-10 rounded-pill text-error-100 px-2 py-1 mt-1 ms-1">限時 8 折 🔥</span>
+                    <div class="card-body">
+                      <h6 class="card-title mb-3 fw-bold">小白也會！從零開始學習 Python 程式設計</h6>
+
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <img class="me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="" width="32" class="me-2" alt="">
+                          <h4 class="fs-7 text-neutral-80 fw-normal">Kelly Hsu</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-end">
+                          <p class="text-primary-100 fw-bold mb-12">NT$ 2,480</p>
+                          <p class="fs-9 text-neutral-100 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-foot border-top">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="mt-1 ms-1 d-flex flex-column align-items-start">
+                          <span class="bg-neutral-40 fs-8 rounded-pill px-2 py-1 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="">
+                          <p class="fw-medium d-flex align-items-center me-1">
+                            <span class="text-warning-10 material-symbols-outlined">
+                              grade
+                            </span>
+                            <span class="fw-bold">4.0</span>(333)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-6.png?raw=true" class="card-img-top" alt="">
+                    <span class="discount bg-error-10 rounded-pill text-error-100 px-2 py-1 mt-1 ms-1">限時 8 折 🔥</span>
+                    <div class="card-body">
+                      <h6 class="card-title mb-3 fw-bold">全面掌握 JavaScript 開發技術</h6>
+
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <img class="me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="" width="32" class="me-2" alt="">
+                          <h4 class="fs-7 text-neutral-80 fw-normal">Kelly Hsu</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-end">
+                          <p class="text-primary-100 fw-bold mb-12">NT$ 2,480</p>
+                          <p class="fs-9 text-neutral-100 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-foot border-top">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="mt-1 ms-1 d-flex flex-column align-items-start">
+                          <span class="bg-neutral-40 fs-8 rounded-pill px-2 py-1 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="">
+                          <p class="fw-medium d-flex align-items-center me-1">
+                            <span class="text-warning-10 material-symbols-outlined">
+                              grade
+                            </span>
+                            <span class="fw-bold">4.0</span>(333)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-7.png?raw=true" class="card-img-top" alt="">
+                    <!-- <span class="discount bg-error-10 rounded-pill text-error-100 px-2 py-1 mt-1 ms-1">限時 8 折 🔥</span> -->
+                    <div class="card-body">
+                      <h6 class="card-title mb-3 fw-bold">HTML & CSS 網頁設計基礎教程</h6>
+
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <img class="me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="" width="32" class="me-2" alt="">
+                          <h4 class="fs-7 text-neutral-80 fw-normal">Kelly Hsu</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-end">
+                          <p class="text-primary-100 fw-bold mb-12">NT$ 2,480</p>
+                          <p class="fs-9 text-neutral-100 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-foot border-top">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="mt-1 ms-1 d-flex flex-column align-items-start">
+                          <span class="bg-neutral-40 fs-8 rounded-pill px-2 py-1 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="">
+                          <p class="fw-medium d-flex align-items-center me-1">
+                            <span class="text-warning-10 material-symbols-outlined">
+                              grade
+                            </span>
+                            <span class="fw-bold">4.0</span>(333)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card position-relative">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-8.png?raw=true" class="card-img-top" alt="">
+                    <!-- <span class="discount bg-error-10 rounded-pill text-error-100 px-2 py-1 mt-1 ms-1">限時 8 折 🔥</span> -->
+                    <div class="card-body">
+                      <h6 class="card-title mb-3 fw-bold">更進一步！深入學習 Node.js 與後端開發</h6>
+
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                          <img class="me-2" src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true" alt="" width="32" class="me-2" alt="">
+                          <h4 class="fs-7 text-neutral-80 fw-normal">Kelly Hsu</h4>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-end">
+                          <p class="text-primary-100 fw-bold mb-12">NT$ 2,480</p>
+                          <p class="fs-9 text-neutral-100 text-decoration-line-through">NT$ 3,200</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-foot border-top">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="mt-1 ms-1 d-flex flex-column align-items-start">
+                          <span class="bg-neutral-40 fs-8 rounded-pill px-2 py-1 mb-1">程式開發</span>
+                          <p class="text-neutral-80 fs-8">已有 420 位同學加入</p>
+                        </div>
+                        <div class="">
+                          <p class="fw-medium d-flex align-items-center me-1">
+                            <span class="text-warning-10 material-symbols-outlined">
+                              grade
+                            </span>
+                            <span class="fw-bold">4.0</span>(333)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
+          <!-- </div> -->
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev hidden"></div>
+          <div class="swiper-button-next hidden"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+    </div>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script>
+      var swiper = new Swiper('.class-swiper', {
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          992: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          }
+        },
+        preventClicksPropagation: true
+      });
+    </script>
+  </body>
+</html>

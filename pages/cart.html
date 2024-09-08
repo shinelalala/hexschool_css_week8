@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week8 Learning | 購物車-購物清單</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="cart-step mt-10 mb-7">
+        <div class="container" aria-label="breadcrumb">
+            <ul class="breadcrumb d-flex justify-content-center text-neutral-80">
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page"><span class="badge bg-primary rounded-circle me-1 p-12">1</span>確認訂單</li>
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page"><span class="badge bg-neutral-60 rounded-circle me-1 p-12">2</span>訂單資訊</li>
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page"><span class="badge bg-neutral-60 rounded-circle me-1 p-12">3</span>訂單完成</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cart-data mb-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header bg-white">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="listAll" checked>
+                                <label class="form-check-label" for="listAll">
+                                    全選
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-body cart-list">
+                            <div class="cart-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="row d-lg-flex align-items-lg-center">
+                                            <div class="col-1">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                </div>
+                                            </div>
+                                            <div class="col-10">
+                                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-1.png?raw=true" class="img-fluid rounded-start">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        <div class="card-body d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                                            <h2 class="fs-6 item-name">使用 HTML、CSS 開發一個網站</h2>
+                                            <p class="card-text fw-semibold item-price text-lg-center">NT$ 1,200</p>
+                                            <div class="d-flex flex-row justify-content-end flex-lg-column item-opt">
+                                                <a href="#" class="btn me-sm-4 me-lg-0 text-neutral-80 text-end">移至收藏</a>
+                                                <a href="#" class="btn text-neutral-80 text-end">刪除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="row d-lg-flex align-items-lg-center">
+                                            <div class="col-1">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                </div>
+                                            </div>
+                                            <div class="col-10">
+                                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-2.png?raw=true" class="img-fluid rounded-start">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        <div class="card-body d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                                            <h2 class="fs-6 item-name">一變應萬變：RWD 響應式網頁設計</h2>
+                                            <p class="card-text fw-semibold item-price text-lg-center">NT$ 1,200</p>
+                                            <div class="d-flex flex-row justify-content-end flex-lg-column item-opt">
+                                                <a href="#" class="btn me-sm-4 me-lg-0 text-neutral-80 text-end">移至收藏</a>
+                                                <a href="#" class="btn text-neutral-80 text-end">刪除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="row d-lg-flex align-items-lg-center">
+                                            <div class="col-1">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" checked>
+                                                </div>
+                                            </div>
+                                            <div class="col-10">
+                                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/cart-3.png?raw=true" class="img-fluid rounded-start">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        <div class="card-body d-flex flex-lg-row flex-column justify-content-between align-items-lg-center">
+                                            <h2 class="fs-6 item-name">使用 jQuery 打造互動性網頁動畫效果</h2>
+                                            <p class="card-text fw-semibold item-price text-lg-center">NT$ 1,200</p>
+                                            <div class="d-flex flex-row justify-content-end flex-lg-column item-opt">
+                                                <a href="#" class="btn me-sm-4 me-lg-0 text-neutral-80 text-end">移至收藏</a>
+                                                <a href="#" class="btn text-neutral-80 text-end">刪除</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold">訂單明細</h5>
+                          <div class="d-flex justify-content-between mb-6 border-bottom text-neutral-80">
+                            <p>2 項課程小計</p>
+                            <p class="fw-semibold">NT$ 3600</p>
+                          </div>
+
+                          <div class="d-flex justify-content-between mt-6 mb-5 align-items-center">
+                            <p class="text-neutral-80">總計</p>
+                            <p class="fw-semibold fs-3">NT$ 3600</p>
+                          </div>
+
+                          <div class="d-flex flex-column">
+                            <button class="btn btn-primary py-3 px-10 mb-3">前往結帳</button>
+                            <p class="text-neutral-80">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+                          </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail">
+                <div class="container">
+                    <div class="fixed-bottom bg-white border-top d-lg-none px-4 py-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="d-flex align-items-center fs-9 text-neutral-80" data-bs-toggle="modal" data-bs-target="#cartDetail"> 展開明細
+                                    <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+                                </a>
+                                <h6 class="fs-6">NT$ 3,600</h6>
+                            </div>
+                            <a href="#" class="btn btn-primary border-0 px-8 py-4 ms-2">前往結帳</a>
+                        </div>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade bottom-0 rounded-0" id="cartDetail"  tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header bg-neutral-10">
+                                <h5 class="modal-title fw-bold">訂單明細</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex justify-content-between pt-5 pb-3 border-bottom text-neutral-80">
+                                    <p>2 項課程小計</p>
+                                    <p class="fw-semibold">NT$ 3600</p>
+                                </div>
+
+                                <div class="d-flex justify-content-between pt-3 pb-5 align-items-center">
+                                    <p class="text-neutral-80">總計</p>
+                                    <p class="fw-semibold fs-3">NT$ 3600</p>
+                                </div>
+
+                                <div>
+                                    <p class="text-neutral-80 fs-8">確認購買即表示您已審閱 Learning 所提供之購物相關條款，並同意條款內容。</p>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between w-100">
+                                <div class="">
+                                    <button type="button" class="btn d-flex aling-items-center px-0 border-0" data-bs-toggle="modal" data-bs-target="#cartDetail">
+                                        收合明細
+                                        <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+                                    </button>
+                                    <p class="fw-semibold fs-3">NT$ 3600</p>
+                                </div>
+
+                                <a href="#" class="btn btn-primary border-0 px-8 py-4 ms-2">前往結帳</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

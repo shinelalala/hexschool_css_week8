@@ -1,0 +1,17 @@
+@mixin div-lg{
+    @media (min-width: 992px){
+      @content;
+    }
+}
+  
+@mixin div-md{
+    @media (min-width: 767px){
+      @content;
+    }
+}
+  
+@mixin div-sm{
+    @media (min-width: 576px){
+      @content;
+    }
+}

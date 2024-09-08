@@ -1,0 +1,70 @@
+.cart-step .breadcrumb-item .badge {
+    width: 20px;
+    height: 20px;
+}
+
+.cart-step .breadcrumb-item::before {
+    content: '\00a0 \00a0 \00a0 \00a0';
+    text-decoration: line-through;
+    color: #909090;
+
+    @include div-lg {
+        content: '\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0';
+    }
+}
+
+.cart-step .breadcrumb-item:first-child::before {
+    content: '';
+}
+
+
+.cart-item {
+    padding-top: 32px;
+
+    &:not(:last-child) {
+        padding-bottom: 32px;
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .item-name {
+        @include div-lg {
+            max-width: 272px;
+        }
+    }
+    .item-price {
+
+        @include div-lg {
+            width: 140px;
+        }
+    }
+    .item-opt {
+
+        @include div-lg {
+            width: 120px;
+        }
+    }
+}
+
+.detail {
+    .modal-dialog {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .modal-content {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .modal.fade .modal-dialog {
+        transition: transform .3s ease-out;
+        transform: translate(0, 50px);
+    }
+
+    .modal.show .modal-dialog {
+        transform: none;
+    }
+}

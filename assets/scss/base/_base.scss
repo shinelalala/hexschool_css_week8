@@ -1,0 +1,15 @@
+* {
+    letter-spacing: 0.02em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined.unfilled {
+    font-variation-settings: "FILL" 0;
+}

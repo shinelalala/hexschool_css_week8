@@ -1,0 +1,82 @@
+.navbar {
+  @include div-lg {
+    border-radius: 100px;
+
+    .form-control {
+      width: 425px;
+    }
+  }
+
+  .navbar-brand {
+    width: 125px;
+    
+    @include div-lg {
+      width: 200px;
+    }
+  }
+  
+  .navbar-brand img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+
+.dropdown-menu-desktop {
+  max-width: 863px; 
+  width: 100%;
+
+  &[data-bs-popper] {
+    left: 15%;
+  }
+
+  .menu-lv1,.menu-lv2,.menu-lv3 {
+    max-height: 600px;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+  }
+
+  .menu-lv1, .menu-lv2 {
+    padding: 12px 12px 4px 12px;
+    width: 26%;
+  }
+  .menu-lv3 {
+    padding: 12px 12px 4px 12px;
+    width: 48%;
+  }
+}
+
+.dropdown-item {
+  padding: 12px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  &::after {
+    content: "\e5cc";
+    font-family: "Material Symbols Outlined";
+  }
+}
+
+
+.dropdown-menu-mb {
+  height: calc(100vh - 92px);
+  overflow-y: scroll;
+  .menu-lv2 {
+    padding: 16px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.discount {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+}
