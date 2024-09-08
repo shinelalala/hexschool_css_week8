@@ -9,6 +9,13 @@
     }
 }
 
+.teacher-content .card-title {
+    text-align: center;
+    @include div-lg {
+        text-align: left;
+    }
+}
+
 .rel-class {
     .card {
         border-radius: 20px;
